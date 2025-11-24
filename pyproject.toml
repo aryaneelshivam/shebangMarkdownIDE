@@ -1,6 +1,6 @@
 [project]
 name = "shebangmarkdown"              # your package name on PyPI
-version = "0.1.0"
+version = "0.1.1"
 description = "Terminal-based Markdown IDE built with Textual by Aryaneel Shivam"
 readme = "README.md"
 requires-python = ">=3.10"
