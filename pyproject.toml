@@ -1,0 +1,19 @@
+[project]
+name = "shebangmarkdown"              # your package name on PyPI
+version = "0.1.0"
+description = "Terminal-based Markdown IDE built with Textual by Aryaneel Shivam"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Aryaneel Shivam", email = "aryaneelshivam1234@gmail.com" }
+]
+dependencies = [
+  "textual>=0.58.0",
+]
+
+[project.scripts]
+devcanvas = "shebangmd.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
