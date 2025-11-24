@@ -1206,9 +1206,14 @@ $$
             self.action_execute_command()
 
 
-if __name__ == "__main__":
-    # Optional: pass a starting file: python markdown_ide.py notes.md
-    app = MarkdownIDE()
+def run_app(root_path: str | None = None) -> None:
+    """Run the Markdown IDE application."""
+    app = MarkdownIDE(root_path)
     # Set initial terminal size: (columns, rows)
     # Default: 120 columns x 40 rows
     app.run(size=(150, 50))
+
+
+if __name__ == "__main__":
+    # Optional: pass a starting file: python markdown_ide.py notes.md
+    run_app()
